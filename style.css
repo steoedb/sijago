@@ -66,9 +66,13 @@ html {
 }
 
 .img-content {
-    width: 10%;
-    height: 22.5%;
-
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-footer {
@@ -149,6 +153,13 @@ h2 {
     font-size: 2em;
     color: white;
     text-align: center;
+
+.m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 .inputbox {
     position: relative;
