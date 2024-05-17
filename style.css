@@ -1,0 +1,261 @@
+*, 
+html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar-container {
+    background-color: #333;
+    height: 5vh;
+    width: 100vw;
+}
+
+.ul-navbar {
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgb(19, 19, 19);
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wraper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content {
+    background-color: rgb(19, 19, 19);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:url(guin.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-content {
+    width: 10%;
+    height: 22.5%;
+
+}
+
+.container-footer {
+    background-color: rgb(19, 19, 19);
+    width: 100vw;
+}
+
+.h3-footer {
+    color: white;
+    display: flex;
+    justify-content: right;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.a {
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table1 {
+    color: white;
+    font-family: sans-serif;
+}
+
+.menu1-content {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:url(bg2.png);
+    background-size: cover;
+    background-position: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:url(bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+.form-box {
+    width: 400px;
+    position: relative;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    border-radius: 30px;
+    backdrop-filter: blur(3px);
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.forget a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.forget a:hover {
+    text-decoration: underline;
+}
+.forget label input {
+    margin-right: 3px;
+}
+.forget label a {
+    color: white;
+    text-decoration: none;
+}
+.forget label a:hover {
+    text-decoration: none;
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    margin: 25px 0 10px;
+}
+.register p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.register p a:hover {
+    text-decoration: underline;
+}
+
+@media screen (min-width: 476px) {
+    .section{
+        background:url(sober.png)
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .section2{
+        background:url(guin.png)
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+    }
+}

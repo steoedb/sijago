@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>SIJAGO</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+         <div class="navbar-container">
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="index.html" class="a">HOME</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="menu.html" class="a">MENU</a>
+                </li>
+            </ul>
+        </div>
+        <!-- NAVBAR END -->
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="">
+                        <h2>SIJAGO JOKI</h2>
+                        <div class="inputbox">
+                            <input type="text" required class="nama">
+                            <label for=""><ion-icon name="brush-outline"></ion-icon>  Nama</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" required class="rank-awal">
+                            <label for=""><ion-icon name="game-controller-outline"></ion-icon>  Rank Awal</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" required class="rank-tujuan">
+                            <label for=""><ion-icon name="game-controller-outline"></ion-icon>  Rank Tujuan</label>
+                        </div>
+                        <button type="button" onclick="sendwhatsapp();">Order</button>
+                    </form>
+
+                    <script>
+                        function sendwhatsapp(){
+                            var phonenumber = "+6281278048100";
+
+                            var name = document.querySelector('.nama').value;
+                            var rankawal = document.querySelector('.rank-awal').value;
+                            var ranktujuan = document.querySelector('.rank-tujuan').value;
+                            
+                            var url = "https://wa.me/" + phonenumber + "?text="
+                            +"*Order :* " +"Joki"+"%0a"
+                            +"*Nama :* " +name+"%0a"
+                            +"*Rank Awal :* " +rankawal+"%0a"
+                            +"*Rank Tujuan :* " +ranktujuan+"%0a"
+                            
+                            window.open(url, '_blank').focus();
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- CONTENT 1 END -->
+
+        <!-- FOOTER -->
+        <div class="container-footer">
+            <h3 class="h3-footer">CONTACT US</h1>
+            <h3 class="h3-footer">
+                <a href="https://wa.me/6281278048100" class="a">+62 81278048100</a>
+            </h3>
+        </div>
+        <!-- FOOTER END -->
+    </body>
+</html>
